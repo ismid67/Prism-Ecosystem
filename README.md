@@ -135,7 +135,7 @@ Commercial implementation requires a licence agreement.
 Inventor and protocol architect
 Zwolle, Netherlands
 
-ietjesmid@gmail.com
+contact@globalsecurity.nu
 [prismpass.nl](https://prismpass.nl) *(migration pending)*
 [prismpass.globalsecurity.nu](https://prismpass.globalsecurity.nu) *(current live environment)*
 
