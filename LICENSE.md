@@ -1,4 +1,18 @@
 # Prism Protocol Specification Licence
+## How this licence relates to the Zenodo record
+
+This specification is deposited on Zenodo under CC-BY 4.0.
+That means: reading, citing, and referencing is freely permitted
+with attribution.
+
+This licence document adds the conditions that apply to
+implementation. CC-BY 4.0 covers the text of the specification.
+This document covers what you may build with it.
+
+When in doubt: CC-BY 4.0 governs the document itself.
+This licence governs any implementation derived from it.
+
+---
 
 **Version 1.0 · June 2026**
 **Copyright © 2026 I. Smid-Woelders, Zwolle, Netherlands. All rights reserved.**
