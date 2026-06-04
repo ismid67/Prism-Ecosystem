@@ -86,7 +86,7 @@ Nothing in this repository constitutes legal or security advice.
 ## Contact for licensing
 
 **I. Smid-Woelders**
-ietjesmid@gmail.com
+contact@globalsecurity.nu
 Zwolle, Netherlands
 
 ---
