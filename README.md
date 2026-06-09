@@ -23,6 +23,22 @@ The working proof-of-concept runs at [prismpass.globalsecurity.nu](https://prism
 
 ---
 
+## Ecosystem overview
+
+**Architecture and components (EN)**
+![PrismPass Ecosystem — overview and architecture, showing the authentication triangle (PrismPass), ZKP proof layer (PrismID), trust and revocation layer (PrismGate), recovery (PrismPin), service applications (PrismShop, PrismEco), data synchronisation (PrismAir), and the physical NFC bridge (PrismTap).](assets/PRISMPASS_ECOSYSTEEM-EN.png)
+
+**Architectuur en componenten (NL)**
+![PrismPass Ecosysteem — overzicht en architectuur met de authenticatiedriehoek (PrismPass), ZKP-bewijslaag (PrismID), vertrouwenslaag (PrismGate), herstel (PrismPin), toepassingen (PrismShop, PrismEco), datasynchronisatie (PrismAir) en de fysieke NFC-brug (PrismTap).](assets/PRISMPASS_ECOSYSTEEM-NL.png)
+
+**Which criticism belongs to which level (EN)**
+![Overview of common questions and criticisms per ecosystem component, with an explanation of how the full ecosystem answers each question — showing that no single component can be evaluated in isolation.](assets/PRISMPASS_ECOSYSTEEM-questions.png)
+
+**Welke kritiek hoort bij welk niveau (NL)**
+![Overzicht van veelgestelde vragen en kritiek per component, met uitleg hoe het volledige ecosysteem antwoord geeft — elk onderdeel vult het blinde vlak van een ander.](assets/PRISMPASS_ECOSYSTEEM-vragen.png)
+
+---
+
 ## The core idea
 
 Authentication systems today answer one question: *who are you?*
@@ -41,7 +57,7 @@ The Prism Ecosystem defines four primitives. Each answers one question. No exist
 
 | Primitive | Question | Reference implementation |
 |-----------|----------|--------------------------|
-| 1 — PrismPass | Is this entity authentic? | WebAuthn Level 3 + ZKP + NFC wearable nonce |
+| 1 — PrismPass | Is this entity authentic? | WebAuthn Level 3 + ZKP + NFC tag (passive physical factor) |
 | 2 — PrismID | Does this entity meet criterion X? | Zero-Knowledge Proof, selective disclosure |
 | 3 — PrismAdd | What has this entity voluntarily shared? | Privacy Pass RFC 9576/9578, user-owned consent |
 | 4 — PrismShield | Is this entity acting voluntarily? | Centroid biometric integrity layer |
@@ -54,10 +70,12 @@ Additional components: PrismGuard (custody layer), PrismAir (encrypted ambient s
 
 Every PrismPass authentication combines three factors simultaneously:
 
-**Biometric** (WebAuthn / FIDO2) + **Device binding** (platform key) + **Physical proximity** (NFC wearable, 4–10 cm range, time-bound nonce 500ms)
+**Biometric** (WebAuthn / FIDO2) + **Device binding** (platform key) + **Physical proximity** (passive NFC tag, 4–10 cm range, time-bound nonce 500ms)
+
+The physical factor is a passive NFC tag — a card, ring, or sticker — that requires no battery or active communication. The proof-of-concept uses a self-made NTAG213 ring (5×5mm chip). The tag format is generic: any NFC tag can serve as the physical factor once written with the correct endpoint URL.
 
 The NFC proximity requirement is a deliberate security design choice.
-Combined with a time-bound nonce, relay attacks are made structurally difficult by design —
+Combined with a time-bound nonce, relay attacks are made structurally difficult by design,
 comparable to the logic used in bank cards.
 
 The server receives only: *proof valid / proof invalid.*
@@ -75,7 +93,7 @@ No identity data is produced server-side.
 | Login history | Does not exist |
 | Link between sessions | Cryptographically prevented |
 | Interest profile | Only as anonymous token — opt-in |
-| Wearable serial number | Does not exist — server sees only: nonce valid or not |
+| NFC tag identifier | Does not exist — server sees only: nonce valid or not |
 
 ---
 
@@ -135,7 +153,7 @@ Commercial implementation requires a licence agreement.
 Inventor and protocol architect
 Zwolle, Netherlands
 
-contact@globalsecurity.nu
+ietjesmid@gmail.com
 [prismpass.nl](https://prismpass.nl) *(migration pending)*
 [prismpass.globalsecurity.nu](https://prismpass.globalsecurity.nu) *(current live environment)*
 
