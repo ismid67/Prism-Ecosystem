@@ -53,7 +53,7 @@ The following are out of scope for this policy:
 
 - Vulnerabilities in the underlying open standards (WebAuthn, circom/snarkjs,
   Privacy Pass, NFC APIs). Please report those to the respective standards bodies.
-- Theoretical attacks that require physical access to both the device and the wearable simultaneously. The threat model acknowledges this boundary explicitly.
+- Theoretical attacks that require physical access to both the device and the physical NFC tag simultaneously. The threat model acknowledges this boundary explicitly.
 - Issues in third-party dependencies not specific to the Prism Protocol architecture.
 
 ---
