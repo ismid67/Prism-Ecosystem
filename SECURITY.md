@@ -26,7 +26,7 @@ A public issue discloses the problem before it can be assessed or addressed.
 
 Report security concerns by email:
 
-**ietjesmid@gmail.com**
+**contact@globalsecurity.nu**
 
 Include in your report:
 

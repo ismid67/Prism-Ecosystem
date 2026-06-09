@@ -118,9 +118,12 @@ The first working proof-of-concept was demonstrated on **25 April 2026**.
 As of June 2026, six live Node.js servers are running under globalsecurity.nu:
 PrismPass, PrismEco, PrismGate, PrismID, PrismAir, PrismShop.
 
-The Invention Disclosure (v18) is registered on Zenodo with a timestamped priority date:
+The Invention Disclosure is registered on Zenodo with a timestamped priority date of 25 April 2026.
 
-**DOI: [10.5281/zenodo.20029292](https://doi.org/10.5281/zenodo.20029292)**
+**Cite all versions (always resolves to the latest):**
+**DOI: [10.5281/zenodo.20029291](https://doi.org/10.5281/zenodo.20029291)**
+
+Current version: v19 (10.5281/zenodo.20583744)
 
 ---
 
@@ -153,7 +156,7 @@ Commercial implementation requires a licence agreement.
 Inventor and protocol architect
 Zwolle, Netherlands
 
-ietjesmid@gmail.com
+contact@globalsecurity.nu
 [prismpass.nl](https://prismpass.nl) *(migration pending)*
 [prismpass.globalsecurity.nu](https://prismpass.globalsecurity.nu) *(current live environment)*
 
