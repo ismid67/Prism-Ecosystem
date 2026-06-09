@@ -127,6 +127,11 @@ Current version: v19 (10.5281/zenodo.20583744)
 
 ---
 
+## Technical reference
+See [/docs](./docs) for architecture, threat model, and recovery model.
+
+---
+
 ## Positioning
 
 The Prism Ecosystem is designed as an open standard, not a commercial product.
