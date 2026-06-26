@@ -123,7 +123,7 @@ The Invention Disclosure is registered on Zenodo with a timestamped priority dat
 **Cite all versions (always resolves to the latest):**
 **DOI: [10.5281/zenodo.20029291](https://doi.org/10.5281/zenodo.20029291)**
 
-Current version: v20 (10.5281/zenodo.20671431)
+Current version: v22 (10.5281/zenodo.20835884)
 
 ---
 
