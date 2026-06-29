@@ -23,6 +23,26 @@ The working proof-of-concept runs at [prismpass.globalsecurity.nu](https://prism
 
 ---
 
+## The core in one image
+
+[#the-core-in-one-image](#the-core-in-one-image)
+
+Before the full ecosystem overview below: this is the one proof the entire protocol rests on. Everything else in this repository is an application of, or an extension on top of, this triangle.
+
+**The triangle, for a general audience (EN)**
+[![The PrismPass triangle: I (biometrics), WHAT (your own device), HOW (you confirm you are present). This proves that I, with a WHAT and a HOW, am really me online. No passwords, no central database with personal data, you decide and you keep it.](https://github.com/ismid67/Prism-Ecosystem/raw/main/assets/PrismPass_Gebruikers_Kern_EN.png)](/ismid67/Prism-Ecosystem/blob/main/assets/PrismPass_Gebruikers_Kern_EN.png)
+
+**De driehoek, voor een algemeen publiek (NL)**
+[![De PrismPass-driehoek: IK (biometrie), WAT (je eigen apparaat), HOE (je bevestigt dat je er bent). Dit bewijst dat IK met een WAT en een HOE online ECHT ben. Geen wachtwoorden, geen centrale database met persoonsgegevens, jij bepaalt en jij bewaart.](https://github.com/ismid67/Prism-Ecosystem/raw/main/assets/PrismPass_Gebruikers_Kern.png)](/ismid67/Prism-Ecosystem/blob/main/assets/PrismPass_Gebruikers_Kern.png)
+
+**The triangle, technical detail per corner (EN)**
+[![Technical breakdown of the PrismPass triangle: I via WebAuthn/FIDO2 with the key in secure hardware storage, WHAT via device binding and a Device Seed, HOW via an NFC tag with a time-bound nonce, confirmed via Zero-Knowledge Proofs. Shows what the server does and does not see.](https://github.com/ismid67/Prism-Ecosystem/raw/main/assets/PrismPass_Kern_EN.png)](/ismid67/Prism-Ecosystem/blob/main/assets/PrismPass_Kern_EN.png)
+
+**De driehoek, technische uitwerking per hoek (NL)**
+[![Technische uitwerking van de PrismPass-driehoek: IK via WebAuthn/FIDO2 met de key in beveiligde hardware-opslag, WAT via device binding en een Device Seed, HOE via een NFC-tag met een tijdgebonden nonce, bevestigd via Zero-Knowledge Proofs. Toont wat de server wel en niet ziet.](https://github.com/ismid67/Prism-Ecosystem/raw/main/assets/PrismPass_Kern.png)](/ismid67/Prism-Ecosystem/blob/main/assets/PrismPass_Kern.png)
+
+---
+
 ## Ecosystem overview
 
 **Architecture and components (EN)**
@@ -123,7 +143,7 @@ The Invention Disclosure is registered on Zenodo with a timestamped priority dat
 **Cite all versions (always resolves to the latest):**
 **DOI: [10.5281/zenodo.20029291](https://doi.org/10.5281/zenodo.20029291)**
 
-Current version: v22 (10.5281/zenodo.20835884)
+Current version: v23 (10.5281/zenodo.21042931)
 
 ---
 
